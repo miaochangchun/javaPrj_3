@@ -10,7 +10,11 @@ import com.miao.serviceImpl.TeacherServiceImpl;
 import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 老师和学生的登录实现类
+ * @author 10048
+ *
+ */
 public class LoginAction extends ActionSupport{
 	private static final long serialVersionUID = -4783105731347655709L;
 	private String id;
@@ -53,7 +57,7 @@ public class LoginAction extends ActionSupport{
 				session.put("studentInfo", student);
 				return "studentSuccess";
 			}else{
-				addActionError("该学生编号不存在，或者密码不正确");
+				addActionError("该学生编号不存在，或者密码不正确~");
 				return Action.INPUT;
 			}
 		}else {

@@ -13,7 +13,11 @@ import com.miao.service.SubjectService;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 显示正确题目答案
+ * @author 10048
+ *
+ */
 public class ShowSubjectAnswer extends ActionSupport{
 	private static final long serialVersionUID = -155039635120836892L;
 	private SubjectService subjectService = new SubjectServiceImpl();

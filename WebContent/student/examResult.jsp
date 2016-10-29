@@ -2,16 +2,11 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>考试结果</title>
-<link href="images/css2.css" rel="stylesheet" type="text/css"/>
-<style type="text/css">
-<!--
-.STYLE3 {font-size: 18px; }
-.STYLE4 {font-size: 18px; font-weight: bold; }
-.STYLE5 {color: #FF0000}
--->
-</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+	<title>考试结果</title>
+	<link href="images/css2.css" rel="stylesheet" type="text/css"></link>
+	<style type="text/css"></style>
+</head>
 
 <body>
 <table width="1003" height="485" border="0" cellpadding="0" cellspacing="0" class="centerbg">

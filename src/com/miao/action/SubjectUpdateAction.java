@@ -6,7 +6,11 @@ import com.miao.po.Subject;
 import com.miao.service.SubjectService;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * ∏¸–¬ ‘Ã‚
+ * @author 10048
+ *
+ */
 public class SubjectUpdateAction extends ActionSupport{
 	private static final long serialVersionUID = 3880054440442107007L;
 	private int subjectId;

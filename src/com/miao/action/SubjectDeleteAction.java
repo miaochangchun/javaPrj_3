@@ -3,7 +3,11 @@ package com.miao.action;
 import com.miao.service.SubjectService;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * É¾³ýÌâÄ¿
+ * @author 10048
+ *
+ */
 public class SubjectDeleteAction extends ActionSupport{
 	private static final long serialVersionUID = -4382415259866556475L;
 	private int subjectId;

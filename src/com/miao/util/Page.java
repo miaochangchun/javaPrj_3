@@ -1,4 +1,5 @@
 package com.miao.util;
+
 public class Page {
 	private int everyPage;			//每页显示记录数
 	private int totalCount;			//总记录数

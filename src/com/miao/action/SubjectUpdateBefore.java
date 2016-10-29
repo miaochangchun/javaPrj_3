@@ -6,7 +6,11 @@ import com.miao.po.Subject;
 import com.miao.service.SubjectService;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 更新之前把题目的所有信息都查询出来
+ * @author 10048
+ *
+ */
 public class SubjectUpdateBefore extends ActionSupport{
 	private static final long serialVersionUID = 5726848569427216098L;
 	private int subjectId;

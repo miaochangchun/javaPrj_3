@@ -4,7 +4,11 @@ import com.miao.po.Subject;
 import com.miao.service.SubjectService;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 增加题目
+ * @author 10048
+ *
+ */
 public class SubjectAddAction extends ActionSupport{
 	private static final long serialVersionUID = -8387935206457577910L;
 	private String subjectTitle;

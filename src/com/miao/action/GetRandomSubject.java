@@ -10,7 +10,11 @@ import com.miao.po.Subject;
 import com.miao.service.SubjectService;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 随机获取20道题目
+ * @author 10048
+ *
+ */
 public class GetRandomSubject extends ActionSupport{
 	private static final long serialVersionUID = -4807982449514539691L;
 	private SubjectService subjectService = new SubjectServiceImpl();

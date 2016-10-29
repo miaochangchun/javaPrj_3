@@ -13,7 +13,11 @@ import com.miao.serviceImpl.SubjectServiceImpl;
 import com.miao.util.Page;
 import com.miao.util.PageResult;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 模糊查询题目信息，并对查询到的关键字标红
+ * @author 10048
+ *
+ */
 public class LikeQuerySubjectAction extends ActionSupport{
 	private static final long serialVersionUID = 5451045052238480364L;
 	private String subjectTitle;

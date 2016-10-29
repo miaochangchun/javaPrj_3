@@ -10,7 +10,11 @@ import com.miao.po.Student;
 import com.miao.service.StudentService;
 import com.miao.serviceImpl.StudentServiceImpl;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 按名字查询学生信息
+ * @author 10048
+ *
+ */
 public class QueryStudentByName extends ActionSupport{
 	private static final long serialVersionUID = -8017025999286814883L;
 	private String studentName;

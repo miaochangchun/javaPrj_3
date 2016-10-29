@@ -12,7 +12,11 @@ import com.miao.serviceImpl.SubjectServiceImpl;
 import com.miao.util.Page;
 import com.miao.util.PageResult;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 分页查询题目信息
+ * @author 10048
+ *
+ */
 public class QuerySubjectAction extends ActionSupport{
 	private static final long serialVersionUID = -6194292415272431666L;
 	private int currentPage;

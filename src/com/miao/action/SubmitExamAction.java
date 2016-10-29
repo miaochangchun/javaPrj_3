@@ -15,7 +15,11 @@ import com.miao.serviceImpl.StudentServiceImpl;
 import com.miao.serviceImpl.SubjectServiceImpl;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-
+/**
+ * 提交试卷，并返回考生姓名和得分
+ * @author 10048
+ *
+ */
 public class SubmitExamAction extends ActionSupport{
 	private static final long serialVersionUID = 5044514409026495417L;
 	private List<Integer> subjectId;
