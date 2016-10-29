@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- XML声明 -->
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+ "http://struts.apache.org/dtds/struts-2.1.dtd"><!-- 指定Struts 2配置文件的DTD信息 -->
+	
+<struts><!-- 根节点 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<package name="struts2" extends="struts-default">
+		<action name="login" class="com.miao.action.LoginAction">
+			<!-- 进入考试界面 -->
+			<result name="studentSuccess" type="chain">getRandomSubject</result>	
+			<!-- 老师登录成功页面 -->
+			<result name="teacherSuccess" type="redirect">/teacher/index.html</result>
+			<!-- 登录失败页面 -->
+			<result name="input">/login.jsp</result>
+		</action>
+		
+		<action name="subjectAdd" class="com.miao.action.SubjectAddAction">
+			<!--重定向到试题添加页面-->
+ 			<result name="success" type="redirect">/teacher/subjectAdd.jsp</result>
+ 			<!--请求转发到试题添加页面-->
+ 			<result name="input">/teacher/subjectAdd.jsp</result>	
+ 		</action>
+ 		
+ 		<action name="subjectQuery" class="com.miao.action.QuerySubjectAction">
+ 			<!-- 跳转到试题列表管理页面 -->
+ 			<result name="success" >/teacher/subjectManage.jsp</result>
+ 		</action>
+		
+		<action name="subjectParticular" class="com.miao.action.SubjectParticularAction">
+			<result name="success">/teacher/subjectShow.jsp</result>
+		</action>
+		
+		<action name="subjectUpdateBefore" class="com.miao.action.SubjectUpdateBefore">
+ 			<!--跳转到试题更新页面-->
+ 			<result name="success">/teacher/subjectUpdate.jsp</result>
+ 		</action>
+ 		
+ 		 <action name="subjectUpdate" class="com.miao.action.SubjectUpdateAction">
+ 			<!--跳转到试题更新页面-->
+ 			<result name="success">/teacher/subjectUpdate.jsp</result>
+ 		</action>
+ 		
+ 		<action name="subjectDelete" class="com.miao.action.SubjectDeleteAction">
+ 			<result name="success">/teacher/subjectManage.jsp</result>
+ 		</action>
+ 		
+ 		<action name="subjectLikeQuery" class="com.miao.action.LikeQuerySubjectAction">
+ 			<!-- 跳转到试题列表管理界面 -->
+ 			<result name="success">/teacher/subjectManage.jsp</result>
+ 		</action>
+ 		
+ 		<action name="getRandomSubject" class="com.miao.action.GetRandomSubject">
+ 			<!-- 跳转到考试页面 -->
+ 			<result name="success">/student/index.jsp</result>
+ 		</action>
+ 		
+ 		<action name="submitExam" class="com.miao.action.SubmitExamAction">
+ 			<!-- 跳转到考试页面 -->
+ 			<result name="success">/student/examResult.jsp</result>
+ 		</action>
+ 		
+ 		<action name="showSubjectAnswer" class="com.miao.action.ShowSubjectAnswer">
+ 			<!-- 跳转到考试页面 -->
+ 			<result name="success">/student/showAnswer.jsp</result>
+ 		</action>
+
+		<action name="queryStudentByName" class="com.miao.action.QueryStudentByName">
+			<!-- 跳转到学生管理界面 -->
+			<result name="success">/teacher/studentManage.jsp</result>
+		</action>
+		
+		<action name="queryStudentByClass" class="com.miao.action.QueryStudentByClass">
+			<!-- 跳转到学生管理界面 -->
+			<result name="success">/teacher/studentManage.jsp</result>
+		</action>
+	</package>
+</struts>
