@@ -31,6 +31,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		HibernateSessionFactory.closeSession();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Subject findSubjectByTitle(String subjectTitle) {
 		// TODO Auto-generated method stub
@@ -46,6 +47,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Subject> findSubjectByPage(Page page) {
 		// TODO Auto-generated method stub
@@ -58,6 +60,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		return lists;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public int findSubjectCount() {
 		// TODO Auto-generated method stub
@@ -115,6 +118,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		HibernateSessionFactory.closeSession();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Subject> likeQueryByTitle(String subjetcTitle, Page page) {
 		// TODO Auto-generated method stub
@@ -128,6 +132,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		return lists;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public int findLinkQueryCount(String subjectTitle) {
 		// TODO Auto-generated method stub
@@ -140,6 +145,7 @@ public class SubjectDAOImpl implements SubjectDAO {
 		return count;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Subject> randomFindSubject(int number) {
 		// TODO Auto-generated method stub

@@ -5,6 +5,7 @@ import java.util.List;
 public class PageResult {
 	private Page page;		//分页信息
 	private List list;		//记录信息
+	
 	public PageResult(Page page, List list) {
 		this.page = page;
 		this.list = list;

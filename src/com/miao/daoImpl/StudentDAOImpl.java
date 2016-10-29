@@ -73,6 +73,7 @@ public class StudentDAOImpl implements StudentDAO {
 		HibernateSessionFactory.closeSession();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Student> findByStudentName(String studentName) {
 		// TODO Auto-generated method stub
@@ -84,6 +85,7 @@ public class StudentDAOImpl implements StudentDAO {
 		return lists;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Student> findByStudentClass(String sclass) {
 		// TODO Auto-generated method stub

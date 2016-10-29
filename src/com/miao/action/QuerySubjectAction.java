@@ -26,6 +26,7 @@ public class QuerySubjectAction extends ActionSupport{
 		this.currentPage = currentPage;
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
